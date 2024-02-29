@@ -10,8 +10,9 @@
 
 // Your code:
 const volumeOfBox = (obj) => {
-    return obj.reduce((a, b) => a * b, 1);
+    return Object.values(obj).reduce((a, b) => a * b, 1);
 };
+console.log(volumeOfBox({width: 2, length: 3, height: 5}))
 
 // 2 ----
 // Create a function that takes strings - firstname, lastname, age, and return object with firstname, lastname, age, yearOfBirth
@@ -62,6 +63,8 @@ const sortVehiclesByPrice = (vehicles) => {
         return a.price - b.price
     });
 };
-const vehicles = [{name: "Executor Star Dreadnought", price: 999}, {name: "T-47 Airspeeder", price: 5}, {name: "AT-AT", price : 20}]
-
+const vehicles = [{name: "Executor Star Dreadnought", price: 999}, {name: "T-47 Airspeeder", price: 5}, {
+    name: "AT-AT",
+    price: 20
+}]
 console.log(sortVehiclesByPrice(vehicles));

@@ -7,7 +7,7 @@
 
 // Your code:
 const arrayOfMultiples = (num, length) => {
-    return Array.from({length}, (_, i) => (i + 1) * 7);
+    return Array.from({length}, (_, i) => (i + 1) * num);
 
 };
 console.log(arrayOfMultiples(7, 5));
